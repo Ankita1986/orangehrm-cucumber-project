@@ -1,0 +1,192 @@
+[
+  {
+    "line": 1,
+    "name": "Login functionality",
+    "description": "As a user,I want to login to orangehrm website",
+    "id": "login-functionality",
+    "keyword": "Feature",
+    "uri": "src/test/java/com/orangehrm/recources/featurefile/login.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 12139807000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "User should be able to view valid Employee Records",
+        "description": "",
+        "id": "employee-records-display;user-should-be-able-to-view-valid-employee-records",
+        "after": [
+          {
+            "result": {
+              "duration": 718879800,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11868221800,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I am on Welcome Admin Page",
+            "match": {
+              "location": "PimTestSteps.iAmOnWelcomeAdminPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1191029300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I select Employee Name \" Fiona Grace\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": " Fiona Grace",
+                  "offset": 24
+                }
+              ],
+              "location": "PimTestSteps.iSelectEmployeeName(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 576487700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "I click on search button",
+            "match": {
+              "location": "PimTestSteps.iClickOnSearchButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 111728300,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "I am able to see the Name in the results",
+            "match": {
+              "location": "PimTestSteps.iAmAbleToSeeTheNameInTheResults()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 10860520100,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.openBrowser()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "User should not be able to view Invalid Employee Records",
+        "description": "",
+        "id": "employee-records-display;user-should-not-be-able-to-view-invalid-employee-records",
+        "after": [
+          {
+            "result": {
+              "duration": 721678900,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 11587368300,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "I am on Welcome Admin Page",
+            "match": {
+              "location": "PimTestSteps.iAmOnWelcomeAdminPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1515912800,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "I select Employee Name \" Govind Maharaj Prabhudeva\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": " Govind Maharaj Prabhudeva",
+                  "offset": 24
+                }
+              ],
+              "location": "PimTestSteps.iSelectEmployeeName(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 561107200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "I click on search button",
+            "match": {
+              "location": "PimTestSteps.iClickOnSearchButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 91671900,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "I get No Records Message in the results",
+            "match": {
+              "location": "PimTestSteps.iGetNoRecordsMessageInTheResults()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Employee Records Display",
+    "description": "As a user I am able to see the Employee information on PIM Page",
+    "id": "employee-records-display",
+    "keyword": "Feature",
+    "uri": "src/test/java/com/orangehrm/recources/featurefile/pim.feature"
+  }
+]
